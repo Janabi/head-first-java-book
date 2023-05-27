@@ -4,7 +4,8 @@
 - In this chapter, It was mainly discussing about the history of JAVA, How JAVA works behind the hood, and a simple syntax that could run a JAVA program.😎
 - Let us start the following major chapter's topics:
     * How Java works behind the hood by the following steps:
-        **Source Code** 👉 **Compiler** 👉 **Output Code (bytecodes)** 👉 **JAVA Virtual Machine**
+        **Source Code** 👉 **Compiler** 👉 **Output Code (bytecodes)*
+        * 👉 **JAVA Virtual Machine**
         * **Source Code** -> the java code that you have written so far.
         * **Compiler** -> to check if there is any error and satisfied that your code will run successfully, Also it would create a bytecodes file.
         * **Output Code (bytecodes)** -> This could help reading and executing any JAVA bytecode file at any operating system.
@@ -42,3 +43,32 @@
     * **Manifest**
         - When you put all your app files into a JAVA archive like a .jar file.
         - Jar file is considered as a simple text file formatted as a ***manifest***.
+
+## Primitives and References
+- In this chapter, it mainly talks about the variables and their types and how we can utilise it.
+
+- Two types of instance variables are:
+    * Primitive
+    * Reference
+
+***General Note*** Each variable must has it owns type and unique name (The name must not match any reserve words in JAVA Language).
+    - Generally you can assign a value into a variable by the following:
+        * literal value using assginment operator.
+        * assign the variable value from another vaiable of the same type.
+        * use an arithmatic operator to assign a variable from another ones.
+
+    - Rules of witing a vaiable name:
+        * It must start with a letter, underscore or a dollar sign ($).
+        * it cannot start with a number at all but you can use any number after the first letter.
+        * It cannot be any one of reserved word in JAVA Like String, Integer, ..etc.
+
+    - Reserved Word 👉 means any keyword that is recognized by the complier.
+
+    - Object reference variable holds bits that has a way (pointer or address) to access an object.
+
+    - we can differentiate between them, the primitive represents a bits value into the variable, meanwhile the reference variable a bits represent a way or pointer (Remote Control) to get to the object.
+
+    -  Explain the Object creation (ex. Dog myDog = new Dog())
+        * Dog myDog 👉 allocate a space for a reference variable that holds a name is **myDog** 
+        * new Dog() 👉 allocate a space for a new instance of a Dog object in a heap.
+        * Dog myDog = new Dog() 👉 Link the reference variable and the instance object together.
