@@ -72,3 +72,9 @@
         * Dog myDog 👉 allocate a space for a reference variable that holds a name is **myDog** 
         * new Dog() 👉 allocate a space for a new instance of a Dog object in a heap.
         * Dog myDog = new Dog() 👉 Link the reference variable and the instance object together.
+
+    - Life on Garbage Collectabile Heap:
+        * We create two instance variables of certain type and refer it as a way to get their type instance where they are living in the heap.
+        * then we create a third instance of the same reference of object in the heap for instance variable of B.
+        * therefore, we have three variables that are linked to only two object in the heap.
+        * if we refer a first variable to the second object in the heap, then the third will be abandoned and refer to be nullable (null reference).
