@@ -102,3 +102,26 @@
 
     - ***IMPLICIT WIDENING*** 👉 you cannot put for example an **byte** variable into element of **integer** array.
     - **Reference variable** 👉 like a remote control and using a dot operator (.) with methods or variables like pressing a button to access them.
+
+
+## Methods use instance variables
+- state affects behavior and behavior effects state.
+- The object usually has an instance variable as a state and its methods to declare the behave of this state.
+- The behaviors might varies based on the measurement (value) of the instance variable (state).
+- Based on what it said in the book **"A method uses parameters. A caller passes arguments"**.
+- What it means that when we initialize a method, we put as many parameter as we want, based on our criteria. However, invoking of this method will need to pass arguments to it.
+- Methods could return back a value based on a type (Primitive or Reference) of value that you are going to return instead of void (return nothing).
+- You can through more than on parameter in the method, the assigned type of these parameter must match what the developer passed as an argument in it.
+- You can make a copy of the declare and assigned variable by passing it value in the argument of a method but this does not mean they will be linked together, whenever you are going to change one of them, it won't reflect the other one.
+- **Getter** and **Setter** or what they also called as a **Accessors** and **Mutators**. As they named, the **setter** is a method were it get at least one parameter and set a value of instance variable. On the other hand, the **getter** will get the value of an instance variable.
+- Encapsulation:
+    * It is a way to protect an instance variable from setting a non sense or unacceptable values, therefore we force the developer to use the setter method where it gets all of its check points.
+    * This could be accomplished by one of method accessors where it called Private.
+    * ***Method Accessors*** are like Private (no body can access it only inside the class itself), and Public where anyone can use it.
+
+- All instance variable has a default value even if you do not assign it to a value (ex: all reference variables will have a null value by default).
+- Instance variable VS. local variable
+    * **Instance variable** those who are inside a class and they always have a default value once they only declared.
+    * **Local variables** those who are within a method and they cannot be used immediately once they declared because they don't have a default value.
+- Use comparison operator (==) to compare two primitive variables but you use equals() method to compare between reference variable.
+- The only way to use (==) with reference variable if they all refer to the same object in the heap.
