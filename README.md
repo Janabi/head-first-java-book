@@ -125,3 +125,51 @@
     * **Local variables** those who are within a method and they cannot be used immediately once they declared because they don't have a default value.
 - Use comparison operator (==) to compare two primitive variables but you use equals() method to compare between reference variable.
 - The only way to use (==) with reference variable if they all refer to the same object in the heap.
+
+## Writing a program
+- Here we will be focusing on building more advance and strength methods.
+- Developing a class:
+    * Trying to know what the class is supposed to do generally.
+    * List all of the instance variables and methods of these classes.
+    * Write a prep code for all procedural flow of the app.
+    * Write down the test code with putting all the scenario that might happen.
+    * Implement the code (class).
+    * Test all methods and their criteria.
+    * continually debugging and reimplementing.
+- How to write a proper class by using the following three methodologies:
+    * **Prep code** 👉 it is more like a pseudocode to help the developer to focus on the procedure rather than the language syntax.
+    * **Test code** 👉 A class that will contain all criteria and scenarios that might happen when we run the program and what the action it might take.
+    * **Real code** 👉 The actual implementation of the program where it starts with the main() method.
+- ***Extreme Programming (XP)*** 👉 important software development methodology.
+    - work regularly.
+    - set a schedule before every release.
+    - release must be small and frequent.
+    - programs in pair.
+    - keep it simple.
+    - always refactor the code.
+    - write the test code first.
+    - Don't put anything that not related to what you are doing.
+- Choose for loop if you know exactly how many you are going to repeat the process, otherwise, go for a while loop.
+- Use Integer.parseInt() if you want to convert the sting of digits (ex: "1", "2",...etc) into an Integer (number) type of value.
+- However, if you try something rather than the digits the program will crash.
+- Use break if a certain condition has been accomplished to leave the loop.
+- Pre/Post Increment/Decrement 👉 Both are a shortcut of decrease and increase a certain variable by one. However, the difference is that if you assign a variable with an pre increment of another one (int x = ++z;), the value of x will be higher by one value. On the other hand, the post increment of the previous example will keep value the same as before.
+- Doing the conversion of types to prevent a crashing of the program will compile it, since we will rely on the integer type later.
+- The enhanced loop in Java, for example (for (String name: nameArray)), means the following:
+    - declare a name variable and initialize it as a null.
+    - assign the each element of the nameArray value.
+    - run the body statements of the array.
+    - repeat that again until you reach out the last element of the array.
+- Casting a primitive variable of larger values into a smaller one will sometimes make a weird result.
+```
+long y = 39;
+int x = (int) y; // will keep the value as 39
+```
+```
+long y = 55500;
+short x = (short) y; // will make a weird result of -10036
+```
+```
+float f = 3.14f;
+int x = (int) f; // will get a result of 3
+```
