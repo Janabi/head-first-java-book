@@ -60,7 +60,8 @@ public class ChapterFive {
         dotCom.setLocationCells(cellLocations);
         boolean isAlive = true;
 
-        while (isAlive == true) {
+        // it could be while(isAlive) or while(isAlive == true)
+        while (isAlive) {
             String guess = helper.getUserInput("Enter a number");
             String result = dotCom.checkYourself(guess);
             numOfGuesses++;

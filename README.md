@@ -173,3 +173,42 @@ short x = (short) y; // will make a weird result of -10036
 float f = 3.14f;
 int x = (int) f; // will get a result of 3
 ```
+
+## Get to know the Java API
+- Java Language has a hundreds of pre-build classes that have a functionality you might need while developing.
+- These might be called as a library.
+- A ready-baked code that you just need to call them without rebuild from a scratch.
+- Best solution for the issue that we faced on a previous chapter, is once we get a hit of one of dot com locations, we will remove that location from a list. This could be accomplish by shrinking the array of removing one element from it.
+- ***ArrayList*** from a Java API that we could use. It has a following baked functionality:
+```
+add(Object element); // to add an object at the end of the list
+remove(int index); // to remove a certain element by its index
+remove(Object element); // to remove a certain element by passing it through an argument
+contains(Object element); // would return 'true' if the object exist within the array
+isEmpty(); // return 'true' if the array is empty
+indexOf(Object element); // return either the number of index for this element if it is exist or return -1 if it does not
+size(); // return a number of elements in the array
+get(int index); // return the element value by passing its index position as an argument
+```
+
+- Why should we use **ArrayList** over default **Array**:
+    * The default **Array** must to know the size of it before you start to use it, however, for the **ArrayList** you don't need that at all.
+    * If you want to assign a value for a specific location, you need to know the index of it but in **ArrayList** you just need to call out add() method and it will be by default pushing this element to the end of the list, no matter what the size it reaches.
+    * **Array** use a syntax that you will not need to use it anywhere in Java, like having an opening and closing brackets to pass the index of selected element (ex: arr[1])
+    * **ArrayList** is using a parameterized type in Java 5.0, that it will discussed later.
+
+- Not operator (!= and !) 👉 when you would like to select all except one scenario, you will use not equal operator.
+- Short circuit Operators (&&, ||) 👉 
+    * && when both sides are true, it would not go to the another side if the first one is false
+    * || when one of the sides are true, it would not go tp the another side if the first one is true and it would consider the entire statement as a true result.
+    * The useful thing about leaving out from the first result, to check if you might still not have been assigned a value to a reference variable and you will need to call one its method.
+- Non Short Circuit Operators (&, |) 👉 they are the same as the short circuit operator but they go to check for both sides no matter how the result it could be for the first one.
+- To call out a certain pre-build class, you will need to know which package does this one belongs to.
+- You have to know the full name of the class to use it in your code without any spelling mistakes (ex: java.util.ArrayList). 
+- There are two ways to tell java that you are going to use a certain pre-build classes from packages:
+    * Import 👉 put the import at the top of the code file and you can use it anywhere you want (ex: import java.util.ArrayList)
+    * Type 👉 type the full name of the package and its class in anywhere you want to use locally 
+        (ex: java.util.ArrrayList<Dog> list = new java.util.ArrayList<Dog>()).
+    one you declare and initialize a variable, when you pass a type of a method parameter, and when you return a type from a method.
+- javax means that this package starts as an extension standard and then got promoted into a library.
+- Type parameter in the **ArrayList** can declare the element type of the array (ex: ArrayList<Button>).
